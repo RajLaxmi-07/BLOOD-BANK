@@ -1,0 +1,557 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+      <style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 175%;
+  height: 233px;
+              margin-left: 67px;
+          }
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+          .style23
+          {
+              width: 427px;
+              height: 294px;
+          }
+          .style24
+          {
+              width: 374px;
+              height: 288px;
+          }
+      </style>
+
+
+    <title>BadmintoN</title>
+    
+    
+     <style type="text/css">
+         .style2
+         {
+             width: 26px;
+             height: 26px;
+         }
+         .style3
+         {
+             width: 30px;
+             height: 25px;
+         }
+         .style4
+         {
+             width: 39px;
+             height: 26px;
+         }
+         .style6
+         {
+             width: 377px;
+             height: 301px;
+         }
+         .style7
+         {
+             width: 344px;
+             height: 299px;
+             margin-top: 0px;
+         }
+         .style8
+         {
+             width: 305px;
+             height: 297px;
+         }
+         .style9
+         {
+             float: left;
+             height: 57px;
+             padding: 15px 15px;
+             font-size: x-large;
+             line-height: 20px;
+             color: #FF6600;
+             width: 204px;
+             font-weight: 700;
+         }
+         .style10
+         {
+             background-color: #CCFFCC;
+             font-family: Algerian;
+         }
+         .style11
+         {
+             width: 62px;
+             height: 31px;
+         }
+         .style12
+         {
+             text-decoration: underline;
+             color: #FF3300;
+         }
+         .style13
+         {
+             font-family: Arial;
+             color: #FF3300;
+         }
+         .style14
+         {
+             color: #FF3300;
+         }
+         .style15
+         {
+             font-size: large;
+             color: #FF3300;
+         }
+         .style16
+         {
+             font-size: large;
+             text-decoration: underline;
+         }
+         .style17
+         {
+             font-size: x-large;
+         }
+         .style18
+         {
+             color: #FF3300;
+             font-weight: 700;
+             font-family: Algerian;
+             font-size: large;
+         }
+         .style19
+         {
+             font-family: Arial;
+             color: #FF3300;
+             text-align: justify;
+             height: 532px;
+             width: 1032px;
+         }
+         .style20
+         {
+             width: 281px;
+             height: 219px;
+         }
+         .style21
+         {
+             width: 224px;
+             height: 224px;
+         }
+         .style22
+         {
+             width: 173px;
+             height: 355px;
+             color: #333333;
+         }
+    </style>
+    <link rel="stylesheet"type="image"href="C:\Users\DELL\Downloads\Badminton 1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    
+        <span class="style10">
+    
+      <a class="style9" href="#">donateBlood <br /> SaveLife</a></span><img 
+            alt="2" class="style11" src="file:///C:/Users/DELL/Documents/Blood/14.jpg" /><br />
+        <br />
+        <br />
+        <br />
+      </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#"><button type="button" class="btn btn-primary">Home</button></a></li>
+      <li>&nbsp;&nbsp; <a href="#"><strong>Contact Us | 8888855555 </strong>| <img alt="icon3" class="style4" 
+            src="file:///C:/Users/DELL/Downloads/Badminton%201/icon1.jpg" /><img 
+            alt="icon" class="style2" 
+            src="file:///C:/Users/DELL/Downloads/Badminton%201/icon2.jpg" />&nbsp; <img alt="icon1" class="style3" 
+            src="file:///C:/Users/DELL/Downloads/Badminton%201/icon3.jpg" /></li>
+      <li> 
+<style> 
+    .style25
+    {
+        width: 333px;
+        height: 282px;
+    }
+    .style26
+    {
+        font-family: "Arial Black";
+        color: #0000CC;
+        font-size: x-large;
+    }
+    .style27
+    {
+        color: #333333;
+        font-weight: 700;
+        font-family: "Arial Black";
+        font-size: large;
+    }
+    .style28
+    {
+        color: #333333;
+        font-weight: 700;
+        font-size: medium;
+    }
+    .style29
+    {
+        font-size: x-large;
+        color: #FF3300;
+        font-family: Arial;
+    }
+    .style30
+    {
+        width: 267px;
+        height: 264px;
+    }
+    .style31
+    {
+        width: 343px;
+        height: 215px;
+    }
+    .style32
+    {
+        width: 286px;
+        height: 187px;
+    }
+    .style33
+    {
+        width: 300px;
+        height: 188px;
+    }
+    .style34
+    {
+        width: 324px;
+        height: 242px;
+    }
+    .style35
+    {
+        font-family: Algerian;
+        font-size: x-large;
+        color: #FF0000;
+    }
+    .style36
+    {
+        font-family: Algerian;
+        font-size: x-large;
+        color: #FF3300;
+    }
+    .style37
+    {
+        font-size: large;
+        color: #FF0000;
+        background-color: #00FFCC;
+    }
+    .style38
+    {
+        font-family: Arial;
+    }
+</style>
+           <img alt="blood h" class="style22" 
+              src="file:///C:/Users/DELL/Documents/Blood/3.png" /><span class="style18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          &quot;Donate Blood Save Life&quot;</span></li>
+        <li> 
+            <span class="style27">It is healthy donating blood. So, we have created an application to 
+            simplify the blood donation process. The donor can easily locate where his/her 
+            blood group is needed. Those locations can either be entities or individuals 
+            that urgently need the donor&#39;s blood group. When there is an urgent need for a 
+            particular blood group, you can use the app to contact only the people having 
+            the required blood group. This system contains different modules to maintain 
+            blood and blood donors. Emergency situations, where accidents occur, create an 
+            immediate, critical need for specific blood types. In addition to emergency 
+            need, advances in medicine have increased the need for blood in many on-going 
+            treatments and elective surgeries. Despite increasing necessity of blood, only 
+            about 5% of the Indian population donates blood. In our project we propose a new 
+            and efficient way to overcome such scenarios. A large number of blood donors are 
+            attracted using an Android application. Cloud based services can prove important 
+            in emergency blood delivery since they can enable central and immediate access 
+            to donors&#39; data and location from anywhere and almost any device. Since almost 
+            everyone carries a mobile phone with him, it ensures instant location tracking 
+            and communication. Using GPS and we find donors nearer to the location from 
+            where the request is generated. Thus the ‘Mobile Blood Bank’ can prove to be a 
+            boon for blood request.</span><li> 
+            <li> 
+                <img alt="Bloodd" class="style30" 
+                    src="file:///C:/Users/DELL/Documents/Blood/7.png" /> Every day 12,000 people in India die due to the sheer lack of donated blood. India collects 11 million units of blood but needs 15 million units, so there's a deficit of 4 million units.<br />
+
+            <br />
+
+      <li></a><strong><span class="style29">Facts</span></strong></div>
+
+      </li>
+  </div>
+    
+    <br />
+    <br />
+    <img alt="donors and receivers" class="style24" 
+        src="file:///C:/Users/DELL/Documents/Blood/Donors%20Receivers.png" /><img alt="chart" class="style23" 
+        src="file:///C:/Users/DELL/Documents/Blood/Blood%20Chart.jpg" /><br />
+    <br />
+    &nbsp;&nbsp;&nbsp; <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    Fig1:&nbsp; Donors and Recievers&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    Fig2:&nbsp;&nbsp;&nbsp;Who can donate Blood to Whom&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <br />
+    <br />
+    <br />
+    <img alt="blooood" class="style25" 
+        src="file:///C:/Users/DELL/Documents/Blood/10.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="style26">Where there&#39;s a will there&#39;s a way</span><br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p class="style13">
+        <strong><span class="style16">Welcome To Blood Donation WebCampp</span>&nbsp;</strong></p>
+    <p class="style19">
+        &nbsp;<span 
+            class="style18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+        <span 
+            class="style28">Our main aim of this work is to save lives of people by providing blood online using technology. A blood bank is a cache or bank of blood
+or blood components, gathered as a result of blood donation or collection, stored and preserved for later use in blood
+transfusion. This work is developed by three perspectives i.e. hospital, blood bank and
+patient/donor. We have provided security for authenticated user as new user have to register according to their type of
+perspective and existing user have to login. While registering, to check whether the donor is giving correct
+information about his/herblood group we will ask the donor to upload his/ her license or any government id proof on
+which blood group is mentioned. This project requires internet connection. We are using android application to find
+nearby donor and to select the nearby hospital online instantly by tracing its location using GPS. We are also proving
+an alert system for severe accidents as using that function an ambulance will be sent to your destination without any
+wastage of time. Notification regarding blood donation camps, health check-up drives etc. in the area will also will
+sent to the registered users. This application reduces the time to a greater extent that is searching for the required
+blood through blood banks and hospitals. Thus this application provides the required information in less time and
+also helps in quicker decision making. It basically bridges the gap between donor and the receiver. It provides better
+blood management and storage</span><span 
+            class="style18">&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img alt="h" class="style20" 
+            src="file:///C:/Users/DELL/Documents/Blood/1.png" />&nbsp;
+        <img alt="hhhh" class="style21" 
+            src="file:///C:/Users/DELL/Documents/Blood/15.jpg" /></span><li><a href="#" class="style14"><strong><button type="button" class="btn btn-primary"><p>Service</p></button></strong></a><span class="style14"><strong></li><div>  1. Request for Blood <br />2. Search for donor<br />3. Donate Blood <br />
+        4. Search for Hospital<br />
+        5. Search Blood Bank<br />
+        6. Search Emergency Ambulance Service<br />
+        7. Advance Donor Searching(through GPS Location)<br />
+        8. Private Donor Directory(through GPS Location)</div></strong></span>
+    <li>
+    <div>
+        <br />
+        <strong><span class="style37">MAIN FEATURES:</span></strong><br />
+        <br />
+        <span class="style38"><strong>* Simple and clear user interface make it easy to 
+        use.<br />
+        * Thousands of Blood Donor around you(Blood Manager).<br />
+        * Find Donors through map(GPS Location).<br />
+        * Full editable profile of Donor.<br />
+        * Verified Blood Compatibility Chart.<br />
+        * For emergency patient can contact with the local organization of any district 
+        in INDIA.<br />
+        Contact any time to coordinators in case of emergency or any query.</strong></span></div>
+    <li><a href="#">
+
+    <br />
+
+        <strong><span class="style17">Process</span></strong>
+        
+<form action="/action_page.php">
+<h1 class="style15"><strong>Check</strong></h1>
+ <p><strong>HIV:</strong></p>
+  <input type="radio" id="Radio9" name="HIV" value="Blood">
+  <label for="Yes">Yes</label><input type="radio" id="Radio17" name="HIV" value="Blood">
+  <label for="Yes">No</label><br>
+
+  <br />
+
+  <p><strong>Hepatitis B:</strong></p>
+  <input type="radio" id="Radio11" name="HB" value="Blood">
+  <label for="Yes">Yes</label><input type="radio" id="Radio10" name="HB" value="Blood">
+  <label for="Yes">No</label><br>
+
+  <br />
+
+  <p><strong>Hepatitis C:</strong></p>
+  <input type="radio" id="Radio13" name="HC" value="Blood">
+  <label for="Yes">Yes</label><input type="radio" id="Radio12" name="HC" value="Blood">
+  <label for="Yes">No</label><br>
+
+  <br />
+
+  <p><strong>Syphilis:</strong></p>
+  <input type="radio" id="Radio15" name="S" value="Blood">
+  <label for="Yes">Yes</label><input type="radio" id="Radio14" name="S" value="Blood">
+  <label for="Yes">No</label> <p><strong>
+
+  <br />
+
+  <p><strong>Any other Infection:</strong></p>
+  <input type="radio" id="Radio8" name="S" value="Blood">
+  <label for="Yes">Yes</label><input type="radio" id="Radio18" name="S" value="Blood">
+  <label for="Yes">No</label> <p><strong>
+
+ <h1 class="style15"><strong>Enter Your Name</strong></h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  </form>&nbsp;<br />
+
+ <p><strong>Please select your Blood Group:</strong></p>
+  <input type="radio" id="Radio1" name="gender" value="O+">
+  <label for="male">O+</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="Radio16" name="gender" value="O-">
+  <label for="female">O-</label><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="Radio3" name="gender" value="A+">
+  <label for="other">A+&nbsp; </label>&nbsp;&nbsp;&nbsp;<input type="radio" id="Radio2" name="gender" value="A-">
+  <label for="male">A-</label><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="Radio5" name="gender" value="AB+">
+  <label for="female">AB+</label>&nbsp;&nbsp;<input type="radio" id="Radio4" name="gender" value="AB-">
+  <label for="female">AB-</label><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="Radio7" name="gender" value="B+">
+  <label for="male">B+</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="Radio6" name="gender" value="B-">
+  <label for="female">B-</label><br>
+  
+  <br />
+
+  <p><strong>Please select your gender:</strong></p>
+  <input type="radio" id="male" name="gender" value="male" />
+  <label for="male">Male</label><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="female" name="gender" value="female" />
+  <label for="female">Female</label><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="other" name="gender" value="other" />
+  <label for="other">Other</label>
+
+  <br />  
+
+  <p><strong>Please select your age:</strong></p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br />  
+  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br />
+
+  <br />
+
+  <h1 class="style15"><strong>Enter Your Address</strong></h1>
+
+<form action="/action_page.php">
+  <label for="fname">House Number :</label>
+  <input type="text" id="Text1" name="D"><br><br>
+  <label for="fname">Street Name :</label>
+ &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="Text5" name="D"><br><br>
+  <label for="lname">District:</label>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="Text3" name="S"><br><br>
+  <label for="lname">State:</label>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="Text2" name="S"><br><br>
+  <br />
+  </form>
+
+  <h1 class="style15"><strong>Enter Your E-Mail</strong></h1>
+  <input type="text" id="Text4" name="S"><br><br>
+  <h1 class="style15"><strong>Enter Your Mobile Number</strong></h1>
+  <input type="text" id="Text6" name="S"><br><br>
+  <h1 class="style15"><strong>Enter Your Location</strong></h1>
+  <button onclick="getLocation()">GPS LOCATION</button>
+
+  
+<p id="demo"></p>
+
+<script>
+    var x = document.getElementById("demo");
+
+    function getLocation() {>State:<
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+    }
+</script>
+  <input type="submit" value="Submit">
+  </form>
+        <li></strong></strong></a><strong>
+
+            <strong>
+
+            &nbsp;<div></div>
+        <div>j    <div>j</div>
+        <form id="form1" runat="server">
+   
+     &nbsp;
+        <img alt="Blood" class="style6" 
+         src="file:///C:/Users/DELL/Documents/Blood/16.png" />&nbsp;&nbsp;
+        <img alt="blood3" class="style8" 
+         src="file:///C:/Users/DELL/Documents/Blood/9.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img alt="blood1" class="style7" 
+         src="file:///C:/Users/DELL/Documents/Blood/10.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        </form>
+
+         
+         
+         
+          </div>
+        <ol class="nav navbar-nav">
+            <li class="active">
+                <br />
+                <br />
+                <a href="#" style="font-weight: 700; font-size: large; font-family: Algerian;">
+                <span class="style12">Benefits of Donating Blood </span></a>
+                <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     1. Reduce harmful iron stores.
+                </p>
+                <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Preserve cardiovascular health.
+                </p>
+                <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Reduce the risk cancer.
+                </p>
+                <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Burn calories.
+                </p>
+                <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Free blood analysis.
+                </p>
+                <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. Give you a sense of pride.
+                </p>
+                <br /></li>
+                
+            <li></li>
+                
+        </ol>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="style35">DONATE</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="donatee" class="style31" 
+                src="file:///C:/Users/DELL/Documents/Blood/2.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="style35">BLOOD</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="DONATEEE" class="style32" 
+                src="file:///C:/Users/DELL/Documents/Blood/5.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <span class="style36">SAVE</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img alt="LIFE" class="style33" 
+                src="file:///C:/Users/DELL/Documents/Blood/4.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="style36">LIFE </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img alt="LIFEE" class="style34" 
+                src="file:///C:/Users/DELL/Documents/Blood/8.jpg" /></strong></strong><li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        DonateBloodSaveLive<img 
+            alt="2" class="style11" src="file:///C:/Users/DELL/Documents/Blood/14.jpg" />
+
+
+</body>
+</html>
